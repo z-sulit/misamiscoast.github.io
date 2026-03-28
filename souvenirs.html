@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Sweet Inspiration — Souvenirs | The Misamis Coast</title>
+  <meta name="description" content="Our Sweet Inspiration — local souvenirs, sweet treats, and delicacies from Misamis Occidental. Take a piece of the coast home with you.">
+  <meta name="keywords" content="Misamis Coast souvenirs, local treats Misamis Occidental, Our Sweet Inspiration, Filipino souvenirs">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">The Misamis Coast</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="dining.html" class="nav__link">Dining</a></li>
+        <li><a href="coffee.html" class="nav__link">Coffee</a></li>
+        <li><a href="souvenirs.html" class="nav__link nav__link--active">Souvenirs</a></li>
+        <li><a href="resort.html" class="nav__link">Beach Resort</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero hero--short" id="souvenirs-hero">
+    <div class="hero__bg" style="background-image: url('images/hero/souvenirs_hero.png');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <img src="Logos/OurSweetInspirations.jpg" alt="Our Sweet Inspiration Logo" class="hero__logo">
+      <h1 class="hero__title">Our Sweet Inspiration</h1>
+      <p class="hero__subtitle">Local treasures and sweet treats to take home — tangible memories of the coast.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="section" id="souvenirs-story">
+    <div class="container">
+      <div class="text-center fade-in" style="max-width: 700px; margin: 0 auto;">
+        <span class="story__label">Take the Coast Home</span>
+        <h2 style="margin-top: var(--space-xs); margin-bottom: var(--space-md);">Sweet Memories, Lovingly Made</h2>
+        <p style="font-size: 1.05rem;">
+          Every souvenir at Our Sweet Inspiration carries a piece of Misamis Occidental's heart.
+          From handcrafted local delicacies to lovingly packaged sweet treats, we make sure 
+          your coastal memories last long after you've left the shore.
+        </p>
+        <p style="font-size: 1.05rem;">
+          Browse our collection of specially curated gifts — perfect for bringing the warmth 
+          of the coast back to your loved ones.
+        </p>
+      </div>
+      <div class="divider">
+        <span class="divider__icon">🍬</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Marquee -->
+  <section class="section section--alt" id="souvenirs-marquee">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: var(--space-xs);">Featured Products</h2>
+      <p class="text-center fade-in" style="color: var(--text-muted); margin-bottom: var(--space-lg); max-width: 500px; margin-left: auto; margin-right: auto;">
+        Browse our selection — follow us on Facebook for new arrivals!
+      </p>
+    </div>
+
+    <div class="marquee-wrapper">
+      <div class="marquee" id="product-marquee">
+        <!-- Using coffee/food images as product display placeholders -->
+        <div class="marquee__item">
+          <img src="BrushnBrew/sikwatenchocnut.jfif" alt="Sikwate and Chocnut treat" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/strawberrrycheesecake.jpg" alt="Strawberry cheesecake" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/ubedeletche.jpg" alt="Ube Leche" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/biscoff.jpg" alt="Biscoff treat" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="AlfredoDiningPic/bakedscallop.jpg" alt="Baked scallop souvenir" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/affogato.jpg" alt="Affogato treat" loading="lazy">
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee__item">
+          <img src="BrushnBrew/sikwatenchocnut.jfif" alt="Sikwate and Chocnut treat" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/strawberrrycheesecake.jpg" alt="Strawberry cheesecake" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/ubedeletche.jpg" alt="Ube Leche" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/biscoff.jpg" alt="Biscoff treat" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="AlfredoDiningPic/bakedscallop.jpg" alt="Baked scallop souvenir" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/affogato.jpg" alt="Affogato treat" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center fade-in" style="padding-top: var(--space-xl);">
+      <a href="https://www.facebook.com/oursweetinspiration" class="btn btn--primary" target="_blank" rel="noopener">
+        See New Arrivals on Facebook →
+      </a>
+    </div>
+  </section>
+
+  <!-- Visit CTA -->
+  <section class="section section--dark text-center" id="souvenirs-cta">
+    <div class="container">
+      <div class="fade-in">
+        <h2 style="color: var(--sand-light);">Every Gift Tells a Coastal Story</h2>
+        <div class="divider" style="margin: var(--space-md) auto;">
+          <span class="divider__icon">🌺</span>
+        </div>
+        <p style="color: var(--sand-dark); max-width: 550px; margin: 0 auto; font-size: 1.1rem;">
+          Visit Our Sweet Inspiration in person and discover the sweetest souvenirs 
+          Misamis Occidental has to offer. Your loved ones will thank you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">The Misamis Coast</p>
+          <p class="footer__tagline">Eat &bull; Sip &bull; Stay by the Coast</p>
+          <p style="font-size: 0.9rem; color: var(--sand-dark); max-width: 300px;">A premier destination connecting Jimenez and Aloran for unforgettable coastal experiences.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="dining.html" class="footer__link">Dining</a>
+          <a href="coffee.html" class="footer__link">Coffee</a>
+          <a href="souvenirs.html" class="footer__link">Souvenirs</a>
+          <a href="resort.html" class="footer__link">Beach Resort</a>
+        </div>
+        <div>
+          <p class="footer__heading">Connect</p>
+          <a href="https://www.facebook.com/alfredoseafoodhouse/" class="footer__link" target="_blank" rel="noopener">Alfredo's Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=61559117474760" class="footer__link" target="_blank" rel="noopener">Brush &amp; Brew Facebook</a>
+          <a href="https://www.facebook.com/oursweetinspiration" class="footer__link" target="_blank" rel="noopener">Sweet Inspiration Facebook</a>
+        </div>
+        <div>
+          <p class="footer__heading">Info</p>
+          <a href="contact.html" class="footer__link">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Misamis Coast. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

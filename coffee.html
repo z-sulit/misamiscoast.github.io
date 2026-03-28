@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brush &amp; Brew Caffè — Artisan Coffee | The Misamis Coast</title>
+  <meta name="description" content="Brush & Brew Caffè — Italian-inspired artisan coffee, art nook, and handcrafted keepsakes in Jimenez, Misamis Occidental. Where every sip sparks imagination.">
+  <meta name="keywords" content="Artisan coffee Misamis Occidental, Brush and Brew Caffe, Italian coffee Jimenez, coffee art nook">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">The Misamis Coast</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="dining.html" class="nav__link">Dining</a></li>
+        <li><a href="coffee.html" class="nav__link nav__link--active">Coffee</a></li>
+        <li><a href="souvenirs.html" class="nav__link">Souvenirs</a></li>
+        <li><a href="resort.html" class="nav__link">Beach Resort</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero hero--short" id="coffee-hero">
+    <div class="hero__bg" style="background-image: url('BrushnBrew/asset_cbrush&brew.png');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <img src="Logos/BrushBew.jpg" alt="Brush and Brew Caffè Logo" class="hero__logo">
+      <h1 class="hero__title">Brush &amp; Brew Caffè</h1>
+      <p class="hero__subtitle">Classic café warmth meets bold brews, creative energy, and handcrafted treasures.</p>
+    </div>
+  </section>
+
+  <!-- Italian Story -->
+  <section class="section" id="coffee-story">
+    <div class="container">
+      <div class="story-section">
+        <div class="story__text slide-in-left">
+          <span class="story__label">Italian Inspired</span>
+          <h2>The Passion of Caffé Lorenzo</h2>
+          <p>Brush &amp; Brew Caffè is born from an Italian love for coffee — the belief that every cup should be an experience, not just a drink. Inspired by the spirit of <em>Caffé Lorenzo</em>, we blend the richness of espresso culture with the warmth of a Filipino coastal home.</p>
+          <p>Step into our art nook, where creativity meets caffeine. Browse handcrafted keepsakes while sipping on our signature brews — each one crafted to spark your imagination.</p>
+        </div>
+        <div class="story__image slide-in-right">
+          <img src="BrushnBrew/affogato.jpg" alt="Affogato at Brush and Brew Caffè" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coffee Splash Decoration + Quote -->
+  <section class="section section--dark text-center" id="coffee-quote" style="position: relative; overflow: hidden;">
+    <img src="aset/asset_splash/1.png" alt="" style="position: absolute; top: -40px; left: -60px; width: 250px; opacity: 0.15; pointer-events: none;" aria-hidden="true">
+    <img src="aset/asset_splash/3.png" alt="" style="position: absolute; bottom: -40px; right: -60px; width: 300px; opacity: 0.12; pointer-events: none;" aria-hidden="true">
+    <div class="container">
+      <div class="fade-in">
+        <p style="font-family: var(--font-heading); font-style: italic; font-size: clamp(1.4rem, 3vw, 2rem); color: var(--sand-light); max-width: 650px; margin: 0 auto; line-height: 1.5;">
+          "Where every sip sparks imagination."
+        </p>
+        <div class="divider" style="margin: var(--space-md) auto;">
+          <span class="divider__icon">☕</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery — Fade & Blur Reveal -->
+  <section class="section section--alt" id="coffee-gallery">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: var(--space-xs);">Bold Brews &amp; Sweet Treats</h2>
+      <p class="text-center fade-in" style="color: var(--text-muted); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">A curated gallery of our handcrafted beverages and artisan delights.</p>
+
+      <div class="gallery gallery--3col">
+        <div class="gallery__item gallery__item--blur stagger-1">
+          <img src="BrushnBrew/icedcoffee.jpg" alt="Iced coffee" loading="lazy">
+          <div class="gallery__item__caption">Iced Coffee</div>
+        </div>
+        <div class="gallery__item gallery__item--blur stagger-2">
+          <img src="BrushnBrew/biscoff.jpg" alt="Biscoff specialty drink" loading="lazy">
+          <div class="gallery__item__caption">Biscoff Special</div>
+        </div>
+        <div class="gallery__item gallery__item--blur stagger-3">
+          <img src="BrushnBrew/sikwate.jpg" alt="Traditional Sikwate" loading="lazy">
+          <div class="gallery__item__caption">Sikwate</div>
+        </div>
+        <div class="gallery__item gallery__item--blur stagger-4">
+          <img src="BrushnBrew/affogato.jpg" alt="Affogato" loading="lazy">
+          <div class="gallery__item__caption">Affogato</div>
+        </div>
+        <div class="gallery__item gallery__item--blur stagger-5">
+          <img src="BrushnBrew/strawberrrycheesecake.jpg" alt="Strawberry cheesecake" loading="lazy">
+          <div class="gallery__item__caption">Strawberry Cheesecake</div>
+        </div>
+        <div class="gallery__item gallery__item--blur stagger-6">
+          <img src="BrushnBrew/ubedeletche.jpg" alt="Ube Leche" loading="lazy">
+          <div class="gallery__item__caption">Ube Leche</div>
+        </div>
+      </div>
+
+      <div class="text-center fade-in" style="margin-top: var(--space-xl);">
+        <a href="https://www.facebook.com/profile.php?id=61559117474760" class="btn btn--primary" target="_blank" rel="noopener">
+          Follow Us on Facebook →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">The Misamis Coast</p>
+          <p class="footer__tagline">Eat &bull; Sip &bull; Stay by the Coast</p>
+          <p style="font-size: 0.9rem; color: var(--sand-dark); max-width: 300px;">A premier destination connecting Jimenez and Aloran for unforgettable coastal experiences.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="dining.html" class="footer__link">Dining</a>
+          <a href="coffee.html" class="footer__link">Coffee</a>
+          <a href="souvenirs.html" class="footer__link">Souvenirs</a>
+          <a href="resort.html" class="footer__link">Beach Resort</a>
+        </div>
+        <div>
+          <p class="footer__heading">Connect</p>
+          <a href="https://www.facebook.com/alfredoseafoodhouse/" class="footer__link" target="_blank" rel="noopener">Alfredo's Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=61559117474760" class="footer__link" target="_blank" rel="noopener">Brush &amp; Brew Facebook</a>
+          <a href="https://www.facebook.com/oursweetinspiration" class="footer__link" target="_blank" rel="noopener">Sweet Inspiration Facebook</a>
+        </div>
+        <div>
+          <p class="footer__heading">Info</p>
+          <a href="contact.html" class="footer__link">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Misamis Coast. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

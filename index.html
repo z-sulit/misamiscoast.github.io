@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Misamis Coast — Eat • Sip • Stay by the Coast</title>
+  <meta name="description" content="Discover The Misamis Coast — fresh seafood, artisan coffee, local souvenirs, and a serene beach resort across Jimenez and Aloran, Misamis Occidental.">
+  <meta name="keywords" content="Best seafood Jimenez, Artisan coffee Misamis Occidental, Aloran beach resort, Misamis Coast, Misamis Occidental tourism">
+  <meta property="og:title" content="The Misamis Coast — Eat • Sip • Stay by the Coast">
+  <meta property="og:description" content="Fresh seafood, artisan coffee, local treasures, and coastal relaxation in Misamis Occidental.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">The Misamis Coast</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="dining.html" class="nav__link">Dining</a></li>
+        <li><a href="coffee.html" class="nav__link">Coffee</a></li>
+        <li><a href="souvenirs.html" class="nav__link">Souvenirs</a></li>
+        <li><a href="resort.html" class="nav__link">Beach Resort</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" style="background-image: url('BeachHouse/beachhouse.jpg');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Discover the Flavors and Shores of Misamis Occidental</h1>
+      <p class="hero__subtitle">Fresh seafood, artisan coffee, and relaxing beach escapes across Jimenez and Aloran.</p>
+      <span class="hero__tagline">Eat &bull; Sip &bull; Stay</span>
+    </div>
+    <div class="hero__scroll-hint">Scroll</div>
+  </section>
+
+  <!-- Tagline Section -->
+  <section class="section text-center" id="intro">
+    <div class="container">
+      <div class="fade-in" style="max-width: 620px; margin: 0 auto;">
+        <p class="tagline" style="font-size: 1.5rem; margin-bottom: var(--space-sm);">Eat &bull; Sip &bull; Stay by the Coast</p>
+        <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem;">
+          Four unique experiences woven into one coastal destination. From the freshest catch of the sea to artisan coffee, handcrafted souvenirs, and tranquil beach sunsets.
+        </p>
+      </div>
+      <div class="divider">
+        <span class="divider__icon">~</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Cards -->
+  <section class="section section--alt" id="brands">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: var(--space-xl);">Our Coastal Family</h2>
+      <div class="brand-cards">
+
+        <!-- Alfredo Seafood House -->
+        <a href="dining.html" class="brand-card fade-in stagger-1" id="card-dining">
+          <img src="Logos/AlfredoSeafoodHouse.jpg" alt="Alfredo Seafood House Logo" class="brand-card__logo">
+          <h3 class="brand-card__title">Alfredo Seafood House</h3>
+          <p class="brand-card__desc">Fresh seafood from the farm. We only serve fresh seafood dishes!</p>
+          <span class="brand-card__link">Explore Dining</span>
+        </a>
+
+        <!-- Brush & Brew Caffè -->
+        <a href="coffee.html" class="brand-card fade-in stagger-2" id="card-coffee">
+          <img src="Logos/BrushBew.jpg" alt="Brush &amp; Brew Caffè Logo" class="brand-card__logo">
+          <h3 class="brand-card__title">Brush &amp; Brew Caffè</h3>
+          <p class="brand-card__desc">Classic café warmth meets bold brews, creative energy, and handcrafted treasures.</p>
+          <span class="brand-card__link">Explore Coffee</span>
+        </a>
+
+        <!-- Our Sweet Inspiration -->
+        <a href="souvenirs.html" class="brand-card fade-in stagger-3" id="card-souvenirs">
+          <img src="Logos/OurSweetInspirations.jpg" alt="Our Sweet Inspiration Logo" class="brand-card__logo">
+          <h3 class="brand-card__title">Our Sweet Inspiration</h3>
+          <p class="brand-card__desc">Local souvenirs and sweet treats to take home.</p>
+          <span class="brand-card__link">Explore Souvenirs</span>
+        </a>
+
+        <!-- Gabriella's Beach Resort -->
+        <a href="resort.html" class="brand-card fade-in stagger-4" id="card-resort">
+          <span class="brand-card__icon">🏖️</span>
+          <h3 class="brand-card__title">Gabriella's Beach Resort</h3>
+          <p class="brand-card__desc">Your serene coastal sanctuary for relaxation.</p>
+          <span class="brand-card__link">Explore Resort</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Highlights Section -->
+  <section class="section" id="highlights">
+    <div class="container">
+      <div class="story-section">
+        <div class="story__text slide-in-left">
+          <span class="story__label">Farm to Plate</span>
+          <h2>The Freshest Catch, Every Day</h2>
+          <p>At Alfredo Seafood House, we believe in serving only the freshest seafood — straight from the farms and the sea to your plate. Every dish tells a story of Jimenez's rich maritime heritage.</p>
+          <a href="dining.html" class="btn btn--primary" style="align-self: flex-start; margin-top: var(--space-sm);">Discover Our Menu</a>
+        </div>
+        <div class="story__image slide-in-right">
+          <img src="AlfredoDiningPic/Bilao.jpg" alt="Bilao seafood platter at Alfredo Seafood House" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="highlight-coffee">
+    <div class="container">
+      <div class="story-section story-section--reverse">
+        <div class="story__text slide-in-right">
+          <span class="story__label">Italian Inspired</span>
+          <h2>Where Every Sip Sparks Imagination</h2>
+          <p>Brush &amp; Brew Caffè merges Italian espresso passion with artistic creativity. Enjoy bold brews alongside handcrafted treasures in a cozy art nook by the coast.</p>
+          <a href="coffee.html" class="btn btn--outline" style="align-self: flex-start; margin-top: var(--space-sm);">Visit the Caffè</a>
+        </div>
+        <div class="story__image slide-in-left">
+          <img src="BrushnBrew/icedcoffee.jpg" alt="Iced coffee at Brush and Brew Caffè" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beach CTA -->
+  <section class="parallax-section" id="beach-cta">
+    <div class="parallax-bg" style="background-image: url('BeachHouse/beachhouse1.jpg');" data-speed="0.3"></div>
+    <div class="hero__overlay" style="background: linear-gradient(180deg, rgba(11,61,91,0.3), rgba(11,61,91,0.6));"></div>
+    <div class="parallax-content scale-in">
+      <h2 style="color: var(--ocean-deep);">Escape to the Coast</h2>
+      <p style="color: var(--text-body); margin-top: var(--space-sm);">Gabriella's Beach Resort offers a tranquil sanctuary along the Aloran shoreline. Let the rhythm of the waves wash your worries away.</p>
+      <a href="resort.html" class="btn btn--primary" style="margin-top: var(--space-md);">Explore the Resort</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">The Misamis Coast</p>
+          <p class="footer__tagline">Eat &bull; Sip &bull; Stay by the Coast</p>
+          <p style="font-size: 0.9rem; color: var(--sand-dark); max-width: 300px;">
+            A premier destination connecting Jimenez and Aloran for unforgettable coastal experiences.
+          </p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="dining.html" class="footer__link">Dining</a>
+          <a href="coffee.html" class="footer__link">Coffee</a>
+          <a href="souvenirs.html" class="footer__link">Souvenirs</a>
+          <a href="resort.html" class="footer__link">Beach Resort</a>
+        </div>
+        <div>
+          <p class="footer__heading">Connect</p>
+          <a href="https://www.facebook.com/alfredoseafoodhouse/" class="footer__link" target="_blank" rel="noopener">Alfredo's Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=61559117474760" class="footer__link" target="_blank" rel="noopener">Brush &amp; Brew Facebook</a>
+          <a href="https://www.facebook.com/oursweetinspiration" class="footer__link" target="_blank" rel="noopener">Sweet Inspiration Facebook</a>
+        </div>
+        <div>
+          <p class="footer__heading">Info</p>
+          <a href="contact.html" class="footer__link">Contact Us</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Misamis Coast. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/alfredoseafoodhouse/" class="footer__social-link" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

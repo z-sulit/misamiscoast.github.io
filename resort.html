@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriella's Beach Resort — Aloran | The Misamis Coast</title>
+  <meta name="description" content="Gabriella's Beach Resort — your serene coastal sanctuary in Aloran, Misamis Occidental. Cottages, sunset views, and the tranquil shores of Mindanao.">
+  <meta name="keywords" content="Aloran beach resort, Gabriella's Beach Resort, Misamis Occidental resort, beach cottages Aloran">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">The Misamis Coast</a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="dining.html" class="nav__link">Dining</a></li>
+        <li><a href="coffee.html" class="nav__link">Coffee</a></li>
+        <li><a href="souvenirs.html" class="nav__link">Souvenirs</a></li>
+        <li><a href="resort.html" class="nav__link nav__link--active">Beach Resort</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero with Parallax -->
+  <section class="hero" id="resort-hero">
+    <div class="hero__bg" style="background-image: url('BeachHouse/beachhouse.jpg');"></div>
+    <div class="hero__overlay" style="background: linear-gradient(180deg, rgba(11,61,91,0.35) 0%, rgba(11,61,91,0.55) 50%, rgba(11,61,91,0.80) 100%);"></div>
+    <div class="hero__content">
+      <span style="font-size: 4rem; display: block; margin-bottom: var(--space-sm); opacity: 0; animation: fadeScaleIn var(--duration-hero) var(--ease-out-expo) 0.2s forwards;">🏖️</span>
+      <h1 class="hero__title">Gabriella's Beach Resort</h1>
+      <p class="hero__subtitle">Your serene coastal sanctuary — where the rhythm of the waves washes every worry away.</p>
+      <span class="hero__tagline">Aloran, Misamis Occidental</span>
+    </div>
+    <div class="hero__scroll-hint">Discover</div>
+  </section>
+
+  <!-- Evocative Description -->
+  <section class="section" id="resort-intro">
+    <div class="container">
+      <div class="text-center fade-in" style="max-width: 700px; margin: 0 auto;">
+        <span class="story__label">A Coastal Sanctuary</span>
+        <h2 style="margin-top: var(--space-xs); margin-bottom: var(--space-md);">Where the Sea Meets Serenity</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          Nestled along the untouched shores of Aloran, Gabriella's Beach Resort is where time slows down.
+          The gentle lapping of turquoise waves, the warm caress of the coastal breeze, and the golden 
+          hues of a Mindanao sunset — this is what paradise feels like.
+        </p>
+      </div>
+      <div class="divider">
+        <span class="divider__icon">🌅</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Image Section 1 -->
+  <section class="parallax-section" id="resort-parallax-1" style="min-height: 70vh;">
+    <div class="parallax-bg" style="background-image: url('BeachHouse/beachhouse1.jpg');" data-speed="0.3"></div>
+    <div class="hero__overlay" style="background: linear-gradient(180deg, rgba(11,61,91,0.15), rgba(11,61,91,0.45));"></div>
+    <div class="parallax-content scale-in">
+      <h2 style="color: var(--ocean-deep);">Cottages by the Shore</h2>
+      <p style="color: var(--text-body); margin-top: var(--space-sm); font-size: 1.05rem;">
+        Our beachfront cottages offer the perfect blend of comfort and natural beauty. 
+        Wake up to the sound of waves, step outside to soft sand, and let the coast 
+        become your home.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section section--alt" id="resort-features">
+    <div class="container">
+      <h2 class="text-center fade-in" style="margin-bottom: var(--space-xl);">The Resort Experience</h2>
+      <div class="brand-cards" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="brand-card fade-in stagger-1">
+          <span class="brand-card__icon">🌊</span>
+          <h3 class="brand-card__title">Beach Access</h3>
+          <p class="brand-card__desc">Direct access to Aloran's pristine shoreline — crystal clear waters and soft, warm sand.</p>
+        </div>
+        <div class="brand-card fade-in stagger-2">
+          <span class="brand-card__icon">🌅</span>
+          <h3 class="brand-card__title">Sunset Views</h3>
+          <p class="brand-card__desc">Watch the sky ignite in golden and coral hues as the sun dips into the Mindanao Sea.</p>
+        </div>
+        <div class="brand-card fade-in stagger-3">
+          <span class="brand-card__icon">🏡</span>
+          <h3 class="brand-card__title">Cozy Cottages</h3>
+          <p class="brand-card__desc">Comfortable, well-appointed cottages designed for rest, relaxation, and seaside living.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Storytelling — Parallax 2 -->
+  <section class="parallax-section" id="resort-parallax-2" style="min-height: 50vh;">
+    <div class="parallax-bg" style="background-image: url('BeachHouse/beachhouse.jpg');" data-speed="0.2"></div>
+    <div class="hero__overlay" style="background: linear-gradient(180deg, rgba(11,61,91,0.2), rgba(11,61,91,0.5));"></div>
+  </section>
+
+  <!-- Closing Section -->
+  <section class="section section--dark text-center" id="resort-closing">
+    <div class="container">
+      <div class="fade-in">
+        <h2 style="color: var(--sand-light);">Let the Coast Heal Your Soul</h2>
+        <div class="divider" style="margin: var(--space-md) auto;">
+          <span class="divider__icon">🐚</span>
+        </div>
+        <p style="color: var(--sand-dark); max-width: 600px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
+          Gabriella's Beach Resort isn't just a place to stay — it's a feeling. 
+          The warmth of Aloran's shores, the kindness of its people, and the untouched 
+          beauty of its coastline will stay with you forever.
+        </p>
+        <a href="contact.html" class="btn btn--white" style="margin-top: var(--space-lg);">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="main-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">The Misamis Coast</p>
+          <p class="footer__tagline">Eat &bull; Sip &bull; Stay by the Coast</p>
+          <p style="font-size: 0.9rem; color: var(--sand-dark); max-width: 300px;">A premier destination connecting Jimenez and Aloran for unforgettable coastal experiences.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Explore</p>
+          <a href="dining.html" class="footer__link">Dining</a>
+          <a href="coffee.html" class="footer__link">Coffee</a>
+          <a href="souvenirs.html" class="footer__link">Souvenirs</a>
+          <a href="resort.html" class="footer__link">Beach Resort</a>
+        </div>
+        <div>
+          <p class="footer__heading">Connect</p>
+          <a href="https://www.facebook.com/alfredoseafoodhouse/" class="footer__link" target="_blank" rel="noopener">Alfredo's Facebook</a>
+          <a href="https://www.facebook.com/profile.php?id=61559117474760" class="footer__link" target="_blank" rel="noopener">Brush &amp; Brew Facebook</a>
+          <a href="https://www.facebook.com/oursweetinspiration" class="footer__link" target="_blank" rel="noopener">Sweet Inspiration Facebook</a>
+        </div>
+        <div>
+          <p class="footer__heading">Info</p>
+          <a href="contact.html" class="footer__link">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Misamis Coast. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
