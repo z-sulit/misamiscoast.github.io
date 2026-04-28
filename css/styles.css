@@ -9,62 +9,64 @@
 /* --- CSS Custom Properties --- */
 :root {
   /* Brand Palette */
-  --ocean-deep:     #0B3D5B;
-  --ocean-mid:      #1A6FA0;
-  --ocean-light:    #2D8FC7;
-  --ocean-glow:     #5BB5E0;
-  
-  --espresso-dark:  #3A1C1A;
-  --espresso:       #4A2C2A;
-  --espresso-mid:   #6B4226;
+  --ocean-deep: #0B3D5B;
+  --ocean-mid: #1A6FA0;
+  --ocean-light: #2D8FC7;
+  --ocean-glow: #5BB5E0;
+
+  --espresso-dark: #3A1C1A;
+  --espresso: #4A2C2A;
+  --espresso-mid: #6B4226;
   --espresso-light: #8B6346;
 
-  --sand-dark:      #D4C4A8;
-  --sand:           #E8D8BC;
-  --sand-light:     #F5E6D0;
-  --sand-lightest:  #FFF8F0;
+  --sand-dark: #D4C4A8;
+  --sand: #E8D8BC;
+  --sand-light: #F5E6D0;
+  --sand-lightest: #FFF8F0;
 
-  --coral:          #E07A5F;
-  --coral-light:    #F09C85;
-  --coral-glow:     #FFB8A3;
+  --coral: #E07A5F;
+  --coral-light: #F09C85;
+  --coral-glow: #FFB8A3;
 
-  --white:          #FFFFFF;
-  --off-white:      #FAFAF7;
-  --text-dark:      #1A1A1A;
-  --text-body:      #3D3D3D;
-  --text-muted:     #6B6B6B;
+  --white: #FFFFFF;
+  --off-white: #FAFAF7;
+  --text-dark: #1A1A1A;
+  --text-body: #3D3D3D;
+  --text-muted: #6B6B6B;
 
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Spacing */
-  --space-xs:   0.5rem;
-  --space-sm:   1rem;
-  --space-md:   1.5rem;
-  --space-lg:   2.5rem;
-  --space-xl:   4rem;
-  --space-2xl:  6rem;
-  --space-3xl:  8rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 8rem;
 
   /* Transitions */
-  --ease-smooth:    cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --ease-out-expo:  cubic-bezier(0.19, 1, 0.22, 1);
-  --ease-in-out:    cubic-bezier(0.42, 0, 0.58, 1);
-  --duration-fast:  0.3s;
-  --duration-med:   0.6s;
-  --duration-slow:  0.9s;
-  --duration-hero:  1.2s;
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --duration-fast: 0.3s;
+  --duration-med: 0.6s;
+  --duration-slow: 0.9s;
+  --duration-hero: 1.2s;
 
   /* Layout */
-  --max-width:      1200px;
-  --nav-height:     72px;
-  --border-radius:  12px;
+  --max-width: 1200px;
+  --nav-height: 72px;
+  --border-radius: 12px;
   --border-radius-lg: 20px;
 }
 
 /* --- Reset & Base --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -97,22 +99,37 @@ a {
   transition: color var(--duration-fast) var(--ease-smooth);
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
 /* --- Typography --- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   color: var(--ocean-deep);
   line-height: 1.2;
   font-weight: 600;
 }
 
-h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
-h2 { font-size: clamp(1.6rem, 3.5vw, 2.8rem); }
-h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
-h4 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
 
 p {
   max-width: 68ch;
@@ -201,8 +218,8 @@ p {
   height: var(--nav-height);
   z-index: 1000;
   transition: background-color var(--duration-med) var(--ease-smooth),
-              box-shadow var(--duration-med) var(--ease-smooth),
-              backdrop-filter var(--duration-med) var(--ease-smooth);
+    box-shadow var(--duration-med) var(--ease-smooth),
+    backdrop-filter var(--duration-med) var(--ease-smooth);
 }
 
 .nav--scrolled {
@@ -349,12 +366,10 @@ p {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(11, 61, 91, 0.45) 0%,
-    rgba(11, 61, 91, 0.65) 50%,
-    rgba(11, 61, 91, 0.85) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(11, 61, 91, 0.45) 0%,
+      rgba(11, 61, 91, 0.65) 50%,
+      rgba(11, 61, 91, 0.85) 100%);
 }
 
 .hero__content {
@@ -431,7 +446,7 @@ p {
   content: '';
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), transparent);
   animation: scrollLine 2s var(--ease-in-out) infinite;
 }
 
@@ -454,7 +469,7 @@ p {
   overflow: hidden;
   cursor: pointer;
   transition: transform var(--duration-med) var(--ease-out-expo),
-              box-shadow var(--duration-med) var(--ease-out-expo);
+    box-shadow var(--duration-med) var(--ease-out-expo);
   box-shadow: 0 4px 20px rgba(11, 61, 91, 0.06);
 }
 
@@ -471,7 +486,7 @@ p {
 .brand-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px rgba(11, 61, 91, 0.12),
-              0 8px 24px rgba(11, 61, 91, 0.08);
+    0 8px 24px rgba(11, 61, 91, 0.08);
 }
 
 .brand-card:hover::before {
@@ -498,7 +513,7 @@ p {
   margin: 0 auto var(--space-md);
   border: 2px solid var(--sand-dark);
   transition: transform var(--duration-med) var(--ease-out-expo),
-              border-color var(--duration-med) var(--ease-smooth);
+    border-color var(--duration-med) var(--ease-smooth);
 }
 
 .brand-card:hover .brand-card__logo {
@@ -553,7 +568,7 @@ p {
   direction: rtl;
 }
 
-.story-section--reverse > * {
+.story-section--reverse>* {
   direction: ltr;
 }
 
@@ -627,7 +642,7 @@ p {
   height: 280px;
   object-fit: cover;
   transition: transform var(--duration-slow) var(--ease-out-expo),
-              filter var(--duration-med) var(--ease-smooth);
+    filter var(--duration-med) var(--ease-smooth);
 }
 
 .gallery__item:hover img {
@@ -639,8 +654,8 @@ p {
   filter: blur(8px) saturate(0.5);
   opacity: 0.6;
   transition: filter var(--duration-slow) var(--ease-smooth),
-              opacity var(--duration-slow) var(--ease-smooth),
-              transform var(--duration-slow) var(--ease-out-expo);
+    opacity var(--duration-slow) var(--ease-smooth),
+    transform var(--duration-slow) var(--ease-out-expo);
 }
 
 .gallery__item--blur.is-visible img {
@@ -654,7 +669,7 @@ p {
   left: 0;
   right: 0;
   padding: var(--space-md) var(--space-sm);
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   color: var(--white);
   font-size: 0.9rem;
   font-weight: 500;
@@ -848,7 +863,7 @@ p {
   font-size: 0.9rem;
   padding: 0.3rem 0;
   transition: color var(--duration-fast) var(--ease-smooth),
-              transform var(--duration-fast) var(--ease-smooth);
+    transform var(--duration-fast) var(--ease-smooth);
 }
 
 .footer__link:hover {
@@ -906,7 +921,7 @@ p {
   padding: var(--space-xl);
   box-shadow: 0 4px 20px rgba(11, 61, 91, 0.06);
   transition: transform var(--duration-med) var(--ease-out-expo),
-              box-shadow var(--duration-med) var(--ease-out-expo);
+    box-shadow var(--duration-med) var(--ease-out-expo);
 }
 
 .contact-card:hover {
@@ -960,7 +975,7 @@ p {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity var(--duration-slow) var(--ease-out-expo),
-              transform var(--duration-slow) var(--ease-out-expo);
+    transform var(--duration-slow) var(--ease-out-expo);
 }
 
 .fade-in.is-visible {
@@ -972,7 +987,7 @@ p {
   opacity: 0;
   transform: translateX(-60px);
   transition: opacity var(--duration-slow) var(--ease-out-expo),
-              transform var(--duration-slow) var(--ease-out-expo);
+    transform var(--duration-slow) var(--ease-out-expo);
 }
 
 .slide-in-left.is-visible {
@@ -984,7 +999,7 @@ p {
   opacity: 0;
   transform: translateX(60px);
   transition: opacity var(--duration-slow) var(--ease-out-expo),
-              transform var(--duration-slow) var(--ease-out-expo);
+    transform var(--duration-slow) var(--ease-out-expo);
 }
 
 .slide-in-right.is-visible {
@@ -996,7 +1011,7 @@ p {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity var(--duration-slow) var(--ease-out-expo),
-              transform var(--duration-slow) var(--ease-out-expo);
+    transform var(--duration-slow) var(--ease-out-expo);
 }
 
 .scale-in.is-visible {
@@ -1005,12 +1020,29 @@ p {
 }
 
 /* Stagger delays for card groups */
-.stagger-1 { transition-delay: 0.1s; }
-.stagger-2 { transition-delay: 0.2s; }
-.stagger-3 { transition-delay: 0.3s; }
-.stagger-4 { transition-delay: 0.4s; }
-.stagger-5 { transition-delay: 0.5s; }
-.stagger-6 { transition-delay: 0.6s; }
+.stagger-1 {
+  transition-delay: 0.1s;
+}
+
+.stagger-2 {
+  transition-delay: 0.2s;
+}
+
+.stagger-3 {
+  transition-delay: 0.3s;
+}
+
+.stagger-4 {
+  transition-delay: 0.4s;
+}
+
+.stagger-5 {
+  transition-delay: 0.5s;
+}
+
+.stagger-6 {
+  transition-delay: 0.6s;
+}
 
 /* ============================================
    KEYFRAME ANIMATIONS
@@ -1019,6 +1051,7 @@ p {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.12);
   }
@@ -1029,6 +1062,7 @@ p {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -1036,8 +1070,13 @@ p {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeScaleIn {
@@ -1045,6 +1084,7 @@ p {
     opacity: 0;
     transform: scale(0.8);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -1052,25 +1092,35 @@ p {
 }
 
 @keyframes gentlePulse {
-  0%, 100% { transform: scale(1.15); }
-  50% { transform: scale(1.22); }
+
+  0%,
+  100% {
+    transform: scale(1.15);
+  }
+
+  50% {
+    transform: scale(1.22);
+  }
 }
 
 @keyframes scrollLine {
-  0% { 
+  0% {
     transform: scaleY(0);
     transform-origin: top;
     opacity: 1;
   }
+
   50% {
     transform: scaleY(1);
     transform-origin: top;
     opacity: 1;
   }
+
   51% {
     transform-origin: bottom;
   }
-  100% { 
+
+  100% {
     transform: scaleY(0);
     transform-origin: bottom;
     opacity: 0;
@@ -1081,14 +1131,22 @@ p {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 /* ============================================
@@ -1181,6 +1239,7 @@ p {
 }
 
 @media (max-width: 480px) {
+
   .gallery--3col,
   .gallery--2col {
     grid-template-columns: 1fr;
@@ -1227,6 +1286,7 @@ p {
     opacity: 0;
     transform: translateY(15px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
