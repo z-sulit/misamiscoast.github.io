@@ -681,6 +681,45 @@ p {
   transform: translateY(0);
 }
 
+/* Gallery Placeholder (when no images yet) */
+.gallery__placeholder {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  background: linear-gradient(135deg, var(--sand-light), var(--sand-dark));
+  transition: background var(--duration-med) var(--ease-smooth);
+}
+
+.gallery__item:hover .gallery__placeholder {
+  background: linear-gradient(135deg, var(--sand-dark), var(--ocean-mid));
+}
+
+.gallery__placeholder-icon {
+  font-size: 3rem;
+  transition: transform var(--duration-med) var(--ease-out-expo);
+}
+
+.gallery__item:hover .gallery__placeholder-icon {
+  transform: scale(1.2);
+}
+
+.gallery__placeholder-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  transition: color var(--duration-med) var(--ease-smooth);
+}
+
+.gallery__item:hover .gallery__placeholder-text {
+  color: var(--white);
+}
+
 /* ============================================
    SCROLLING MARQUEE (Souvenirs)
    ============================================ */
