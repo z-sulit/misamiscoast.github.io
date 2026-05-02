@@ -85,82 +85,124 @@
     </div>
   </section>
 
-  <!-- Gallery — Fade & Blur Reveal -->
+  <!-- Gallery — Scrolling Marquee -->
   <section class="section section--alt" id="coffee-gallery">
     <div class="container">
       <h2 class="text-center fade-in" style="margin-bottom: var(--space-xs);">Bold Brews &amp; Sweet Treats</h2>
       <p class="text-center fade-in"
-        style="color: var(--text-muted); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">
+        style="color: var(--text-muted); margin-bottom: var(--space-lg); max-width: 500px; margin-left: auto; margin-right: auto;">
         A curated gallery of our handcrafted beverages and artisan delights.</p>
+    </div>
 
-      <div class="gallery gallery--3col">
-        <div class="gallery__item gallery__item--blur stagger-1">
+    <div class="marquee-wrapper">
+      <div class="marquee" id="coffee-marquee">
+        <div class="marquee__item">
           <img src="BrushnBrew/icedcoffee.jpg" alt="Iced coffee" loading="lazy">
-          <div class="gallery__item__caption">Iced Coffee</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-2">
-          <img src="BrushnBrew/biscoff.jpg" alt="Biscoff specialty drink" loading="lazy">
-          <div class="gallery__item__caption">Biscoff Special</div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof1.jfif" alt="Signature coffee blend" loading="lazy">
         </div>
-        <div class="gallery__item gallery__item--blur stagger-3">
+        <div class="marquee__item">
           <img src="BrushnBrew/sikwate.jpg" alt="Traditional Sikwate" loading="lazy">
-          <div class="gallery__item__caption">Sikwate</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-4">
+        <div class="marquee__item">
           <img src="BrushnBrew/afgato.jfif" alt="Affogato" loading="lazy">
-          <div class="gallery__item__caption">Affogato</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-5">
-          <img src="BrushnBrew/strawberrrycheesecake.jpg" alt="Strawberry cheesecake" loading="lazy">
-          <div class="gallery__item__caption">Strawberry Cheesecake</div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof2.jfif" alt="Handcrafted coffee" loading="lazy">
         </div>
-        <div class="gallery__item gallery__item--blur stagger-6">
-          <img src="BrushnBrew/ubedeletche.jpg" alt="Ube Leche" loading="lazy">
-          <div class="gallery__item__caption">Ube Leche</div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof3.jfif" alt="Artisan coffee drink" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof4.jfif" alt="Specialty coffee creation" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/sikwatenchocnut.jfif" alt="Sikwate with Chocnut" loading="lazy">
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee__item">
+          <img src="BrushnBrew/icedcoffee.jpg" alt="Iced coffee" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof1.jfif" alt="Signature coffee blend" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/sikwate.jpg" alt="Traditional Sikwate" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/afgato.jfif" alt="Affogato" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof2.jfif" alt="Handcrafted coffee" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof3.jfif" alt="Artisan coffee drink" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/cof4.jfif" alt="Specialty coffee creation" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/sikwatenchocnut.jfif" alt="Sikwate with Chocnut" loading="lazy">
         </div>
       </div>
+    </div>
 
-      <div class="text-center fade-in" style="margin-top: var(--space-xl);">
-        <a href="https://www.facebook.com/profile.php?id=61559117474760" class="btn btn--primary" target="_blank"
-          rel="noopener">
-          Follow Us on Facebook →
-        </a>
-      </div>
+    <div class="text-center fade-in" style="padding-top: var(--space-xl);">
+      <a href="https://www.facebook.com/profile.php?id=61559117474760" class="btn btn--primary" target="_blank"
+        rel="noopener">
+        Follow Us on Facebook →
+      </a>
     </div>
   </section>
 
-  <!-- Art Corner -->
+  <!-- Art Corner — Scrolling Marquee -->
   <section class="section" id="art-corner">
     <div class="container">
       <h2 class="text-center fade-in" style="margin-bottom: var(--space-xs);">Art Corner</h2>
       <p class="text-center fade-in"
-        style="color: var(--text-muted); margin-bottom: var(--space-xl); max-width: 500px; margin-left: auto; margin-right: auto;">
+        style="color: var(--text-muted); margin-bottom: var(--space-lg); max-width: 500px; margin-left: auto; margin-right: auto;">
         Discover handcrafted art and creative keepsakes.</p>
+    </div>
 
-      <div class="gallery gallery--3col">
-        <div class="gallery__item gallery__item--blur stagger-1">
+    <div class="marquee-wrapper">
+      <div class="marquee" id="art-marquee" style="animation-direction: reverse;">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc1.jfif" alt="Art Corner display" loading="lazy">
-          <div class="gallery__item__caption">Art Corner</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-2">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc2.jfif" alt="Handcrafted art and keepsakes" loading="lazy">
-          <div class="gallery__item__caption">Handcrafted Keepsakes</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-3">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc3.jfif" alt="Art Corner creations" loading="lazy">
-          <div class="gallery__item__caption">Creative Creations</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-4">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc4.jfif" alt="Artisan crafts on display" loading="lazy">
-          <div class="gallery__item__caption">Artisan Crafts</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-5">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc5.jfif" alt="Coastal-inspired artwork" loading="lazy">
-          <div class="gallery__item__caption">Coastal Artwork</div>
         </div>
-        <div class="gallery__item gallery__item--blur stagger-6">
+        <div class="marquee__item">
           <img src="BrushnBrew/artc6.jfif" alt="Handmade art pieces" loading="lazy">
-          <div class="gallery__item__caption">Handmade Pieces</div>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc1.jfif" alt="Art Corner display" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc2.jfif" alt="Handcrafted art and keepsakes" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc3.jfif" alt="Art Corner creations" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc4.jfif" alt="Artisan crafts on display" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc5.jfif" alt="Coastal-inspired artwork" loading="lazy">
+        </div>
+        <div class="marquee__item">
+          <img src="BrushnBrew/artc6.jfif" alt="Handmade art pieces" loading="lazy">
         </div>
       </div>
     </div>
